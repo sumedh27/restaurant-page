@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgb(246, 149, 149);
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 100px;
+}
+
+header > nav > button{
+    background-color: rgb(214, 97, 97);
+    height: 50px;
+    width: 100px;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+}
+
+header > nav > button:hover{
+    background-color: rgb(129, 59, 59);
+}
+
+#content{
+    background-color: rgb(233, 81, 81);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.main-container{
+    background-color: rgb(252, 160, 160);
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 50px;
+}
+
+.resto-name{
+    font-size: 4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px;
+    border: solid 4px black;
+    border-radius: 20px;
+}
+
+.hpg-img{
+    height: 300px;
+    width: 500px;
+    border: solid 2px black;
+}
+
+.about{
+    padding: 20px;
+    width: 500px;
+    border: solid 2px black;
+    border-radius: 40px;
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.about > h2{
+    font-size: 1.8rem;
+    justify-self: flex-end;
+}
+
+.timings,
+.location{
+    padding: 20px;
+    width: 500px;
+    border: solid 2px black;
+    border-radius: 40px;
+    font-size: 1.0rem;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timings > h2{
+    justify-self: center;
+    font-size: 1.8rem;
+}
+
+footer{
+    background-color: rgb(246, 149, 149);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
