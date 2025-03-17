@@ -1,12 +1,11 @@
 import "./styles.css";
 import {homepageContent} from "./pages/homepage.js"
 import {menuContent} from "./pages/menupage.js"
-import {aboutContent} from "./pages/aboutpage.js"
+import {contactPage} from "./pages/contactpage.js"
 
 const headerButton = document.querySelectorAll(".header-button");
 
 homepageContent();
-
 
 function clearContent() {
     content.innerHTML = ''
@@ -22,7 +21,7 @@ headerButton.forEach(button => {
             menuContent();
         }else if(button.id === "about-btn"){
             clearContent();
-            aboutContent();
+            contactPage();
         }
     });
 });

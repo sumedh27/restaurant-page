@@ -1,4 +1,4 @@
-import image from "../images/homepage.png";
+import homePage from "../images/homepage.png";
 
 const content = document.querySelector(`#content`);
 
@@ -14,7 +14,7 @@ export function homepageContent(){
     mainContainer.appendChild(restaurantName);
     
     const kitchenImage = document.createElement(`img`)
-    kitchenImage.src = image;
+    kitchenImage.src = homePage;
     kitchenImage.className = "hpg-img";
     mainContainer.appendChild(kitchenImage);
 
@@ -25,7 +25,7 @@ export function homepageContent(){
     mainContainer.appendChild(aboutContent);
     aboutContent.appendChild(para);
     const authorName = document.createElement(`h2`);
-    authorName.textContent = `BANDA DON`;
+    authorName.textContent = `-BANDA DON`;
     authorName.className = "about-author";
     aboutContent.append(authorName);
 
