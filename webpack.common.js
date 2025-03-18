@@ -3,7 +3,6 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { resourceLimits } = require("worker_threads");
 
 module.exports = {
-    mode: "development",
     entry: "./src/index.js",
     output: {
         filename: "main.js",
